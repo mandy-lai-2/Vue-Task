@@ -58,6 +58,18 @@ const routes = [
     component: () => import("../views/Job.vue"),
       
   },
+  {
+    path: "/connection",
+    name: "Connection",
+    component: () => import("../views/Connection.vue"),
+      
+  },
+  {
+    path: "/qa",
+    name: "Qa",
+    component: () => import("../views/Qa.vue"),
+      
+  },
 ];
 
 const router = createRouter({

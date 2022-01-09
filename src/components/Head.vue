@@ -18,7 +18,7 @@ export default {
 <template>
   <header>
     <!-- <router-link to="/about">About</router-link> -->
-    <div class="logo"><img src="../assets/images/Logo.jpg"></div>
+    <div class="logo"><router-link to="/" class="navLink"><img src="../assets/images/Logo.jpg"></router-link></div>
     <nav>
       <router-link to="/" class="navLink">
         <img src="../assets/images/nav_icon6.jpg"><div class="navTxt">HOME</div>
@@ -71,7 +71,8 @@ export default {
 <style lang="scss" scoped>
 $color-gray: gray;
 $color-blue: steelblue;
-$color-purple: blueviolet;
+$color-purple: #8a2be2;
+// @mixin將程式碼帶入到對應的地方去，同時可帶入變數
 @mixin navLink{
       text-align: center;
       img{
@@ -85,6 +86,7 @@ $color-purple: blueviolet;
         color: #000;
       }
 }
+// @extend繼承，會被往前統一整理
 %hover-pointer {
   cursor: pointer;
 }

@@ -86,7 +86,13 @@ export default {
   .leftContent{
     margin-right: 15px;
     flex: 1 0 76%;
+    @media (max-width:768px){
+            margin-right: 0;
+        }
     .main{
+          border: 1px solid #eee;
+          box-shadow: 0px 1px 2px #efefef;
+          margin-bottom: 30px;
       .mainTxt{
         display: flex;
         .PersonalPhoto {
@@ -104,6 +110,10 @@ export default {
       display: flex;
       margin-bottom: 0;
       border-bottom: 1px solid #aaa;
+      @media (max-width:768px){
+            flex-wrap: wrap;
+            padding-left: 0;
+        }
       li{
         display: contents;
         a{

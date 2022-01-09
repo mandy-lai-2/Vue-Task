@@ -5,7 +5,7 @@ export default {
 </script>
 <template>
   <footer>
-    <div class="logo"><img src="../assets/images/Logo.jpg"></div>
+    <div class="logo"><router-link to="/" class="navLink"><img src="../assets/images/Logo.jpg"></router-link></div>
     <div class="footRight">
       <div class="Navigation">
         <h4>Navigation</h4>

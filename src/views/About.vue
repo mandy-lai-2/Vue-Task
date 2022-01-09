@@ -10,10 +10,10 @@ export default {
       <ul>
         <li><router-link to="/about/Connections" ><i class="fas fa-link"></i>　CONNECTIONS</router-link></li>
         <li><router-link to="/about/Invitations" ><i class="far fa-dot-circle"></i>　INVITATIONS</router-link></li>
-        <li><a href="#"><i class="fas fa-archive"></i>　TEAMMATES</a></li>
-        <li><a href="#"><i class="fas fa-child"></i>　GROUPS</a></li>
-        <li><a href="#"><i class="fas fa-clone"></i>　PAGES</a></li>
-        <li><a href="#"><i class="fas fa-tags"></i>　HASHTAGS</a></li>
+        <li><router-link to="/about/Connections" ><i class="fas fa-archive"></i>　TEAMMATES</router-link></li>
+        <li><router-link to="/about/Invitations" ><i class="fas fa-child"></i>　GROUPS</router-link></li>
+        <li><router-link to="/about/Connections" ><i class="fas fa-clone"></i>　PAGES</router-link></li>
+        <li><router-link to="/about/Invitations" ><i class="fas fa-tags"></i>　HASHTAGS</router-link></li>
       </ul>
       
     </div>
@@ -24,9 +24,12 @@ export default {
 <style lang="scss" scoped>
 .about{
   display: flex;
+  @media (max-width:768px){
+    flex-direction: column;
+  }
   .leftMenu{
     flex: 0 0 20%;
-    
+    // display: none;
     margin: 0 15px;
     ul{
       padding-left:0;
@@ -57,6 +60,7 @@ export default {
   }
   .rightContent{
     // background-color: #fed;
+    flex: 1;
   }
 
 }

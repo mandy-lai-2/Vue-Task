@@ -86,6 +86,9 @@ h4 {
 }
 .invitationsCon{
   display: flex;
+  @media (max-width:768px){
+            flex-direction: column;
+        }
   .invitationsBox{
     flex-basis: 50%;
     display: flex;
@@ -95,6 +98,7 @@ h4 {
   box-shadow: 1px 1px 3px #dedede;
   font-size: 0.9rem;
   margin: 10px;
+    
     .boxImg{
       margin-right: 10px;
       img{
